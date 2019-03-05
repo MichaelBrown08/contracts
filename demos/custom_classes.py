@@ -10,7 +10,11 @@ def f(x):
 
 f(CustomClass()) # OK
 
-f(42) # fails
+#f(42) # fails
+
+a=CustomClass()
+
+f(a)
 #
 # contracts.interface.ContractNotRespected: Breach for argument 'x' to f().
 # Expected type 'CustomClass', got <type 'int'>.
